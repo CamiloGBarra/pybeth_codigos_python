@@ -13,7 +13,7 @@ def newton_raphson(funcion, derivada, p0, tol, max_iter):
         p = p - funcion(p) / derivada(p)
         if abs(funcion(p)) < tol:
             break
-    return p, funcion(p), abs(funcion(p))
+    return p, funcion(p), abs(funcion(p))|
 
 p0 = 1.6
 tol = 0.0001
